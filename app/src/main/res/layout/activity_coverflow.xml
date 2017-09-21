@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:coverflow="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context="com.msf.mycarousellayout.ui.MainActivity">
+
+
+    <com.msf.mycarousellayout.carousellayout.FeatureCoverFlow
+        android:id="@+id/coverflow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        coverflow:adjustPositionMultiplier="1"
+        coverflow:coverHeight="@dimen/cover_height"
+        coverflow:coverWidth="150dp"
+        coverflow:maxRotationAngle="3"
+        coverflow:maxScaleFactor="2"
+        coverflow:reflectionGap="0px"
+        coverflow:reflectionOpacity="0"
+        coverflow:spacing="0.39"></com.msf.mycarousellayout.carousellayout.FeatureCoverFlow>
+
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/label_background"
+        android:visibility="gone" />
+
+
+    <TextSwitcher
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="16dp" />
+
+</RelativeLayout>
